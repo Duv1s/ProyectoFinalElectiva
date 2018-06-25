@@ -31,7 +31,6 @@ public class EventoDTO {
     }
 	
     
- 
     /**
     * @generated
     */
@@ -51,7 +50,6 @@ public class EventoDTO {
     * @generated
     */
     private Double costo;
-    
     
     
     /**

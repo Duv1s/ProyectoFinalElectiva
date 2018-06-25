@@ -83,7 +83,6 @@ public class ConcejalLogica {
 		entidad.setId(dto.getId());
 			entidad.setNombres(dto.getNombres());
 			entidad.setApellidos(dto.getApellidos());
-			entidad.setId(dto.getId());
 		
 			if(dto.getPeticion()!=null){
 				entidad.setPeticion(new Peticion());
@@ -120,7 +119,6 @@ public class ConcejalLogica {
 		dto.setId(entidad.getId());
 				dto.setNombres(entidad.getNombres());
 				dto.setApellidos(entidad.getApellidos());
-				dto.setId(entidad.getId());
 		
 			if(entidad.getPeticion()!=null){
 				dto.setPeticion(

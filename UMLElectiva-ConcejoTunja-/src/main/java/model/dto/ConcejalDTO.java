@@ -19,7 +19,7 @@ public class ConcejalDTO {
         this.id=id;
     }
 
-	
+	private Long id;
 
     public Long getId() {
         return id;
@@ -39,11 +39,6 @@ public class ConcejalDTO {
     * @generated
     */
     private String apellidos;
-    
-    /**
-    * @generated
-    */
-    private Long id;
     
     
     /**
@@ -99,7 +94,7 @@ public class ConcejalDTO {
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-
+    
 	/**
 	* @return
 	* @generated

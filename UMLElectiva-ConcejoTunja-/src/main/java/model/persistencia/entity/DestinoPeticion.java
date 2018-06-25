@@ -36,18 +36,12 @@ public class DestinoPeticion {
     * @generated
     * 1-1-false
     */
-
-    /**
-    * @generated
-    * 1-1-false
-    */
     
     //@Column(name = "nombre")
     private String nombre;
     
     
     
-   
     /**
     * @generated
     */

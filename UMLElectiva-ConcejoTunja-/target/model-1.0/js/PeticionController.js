@@ -35,6 +35,10 @@ module.controller('PeticionCtrl', ['$scope', '$filter', '$http', function ($scop
         
 
     $scope.listar();
+    
+     $scope.visto = function() {
+        console.log(JSON.stringify($scope.tags));
+    };
     //guardar
     $scope.nuevo = function () {
         $scope.panelEditar = true;

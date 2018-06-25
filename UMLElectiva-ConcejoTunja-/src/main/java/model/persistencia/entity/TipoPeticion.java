@@ -37,12 +37,6 @@ public class TipoPeticion {
     * 1-1-false
     */
     
-    
-    /**
-    * @generated
-    * 1-1-false
-    */
-    
     //@Column(name = "nombre")
     private String nombre;
     
@@ -53,6 +47,7 @@ public class TipoPeticion {
     
     //@Column(name = "descripcion")
     private String descripcion;
+    
     
     
     /**

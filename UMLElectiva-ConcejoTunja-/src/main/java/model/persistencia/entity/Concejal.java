@@ -50,12 +50,6 @@ public class Concejal {
     //@Column(name = "apellidos")
     private String apellidos;
     
-    /**
-    * @generated
-    * 1-1-false
-    */
-  
-    
     
     /**
     * @generated
@@ -100,18 +94,6 @@ public class Concejal {
         this.apellidos = apellidos;
     }
     
-  
-	
-	public List<Evento> getEvento(){
-		if(evento!=null){
-			evento=new ArrayList<Evento>(); 
-		}
-		return this.evento;
-	}
-	
-	public void setEvento(List<Evento> evento){
-		this.evento=evento;
-	}
 	
 	/**
 	* @generated
@@ -125,6 +107,17 @@ public class Concejal {
 	*/
 	public void setPeticion(Peticion peticion) {
 	    this.peticion = peticion;
+	}
+	
+	public List<Evento> getEvento(){
+		if(evento!=null){
+			evento=new ArrayList<Evento>(); 
+		}
+		return this.evento;
+	}
+	
+	public void setEvento(List<Evento> evento){
+		this.evento=evento;
 	}
 	
 }

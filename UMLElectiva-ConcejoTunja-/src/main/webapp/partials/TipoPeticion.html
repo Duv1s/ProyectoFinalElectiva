@@ -9,9 +9,6 @@
         <table class="resultados table table-striped">
             <tr>
                 <th>
-                    id
-                </th>
-                <th>
                     nombre
                 </th>
                 <th>
@@ -24,8 +21,6 @@
                 </th>
             </tr>
             <tr dir-paginate="row in lista|filter: q|itemsPerPage:10">
-                	<td>{{row.id}}</td>
-                
                 	<td>{{row.nombre}}</td>
                 
                 	<td>{{row.descripcion}}</td>
@@ -51,15 +46,6 @@
     <div class="panel-heading">Parametrizaci&oacute;n de TipoPeticion</div>
     <div class="panel-body">
 	    				
-	    <div class="form-group col-md-6" ng-class="errores.id?'error':''">
-	        <label for="id">id</label>
-	        <input id="id" 
-	               class="form-control" 
-	    		   type="text"
-	               ng-model="datosFormulario.id"
-	    		   placeholder="id"/>
-	        <div ng-show="errores.id">{{errores.id}}</div>
-	    </div>				
 	    <div class="form-group col-md-6" ng-class="errores.nombre?'error':''">
 	        <label for="nombre">nombre</label>
 	        <input id="nombre" 

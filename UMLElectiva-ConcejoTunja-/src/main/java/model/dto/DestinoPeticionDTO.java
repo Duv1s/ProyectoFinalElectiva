@@ -29,7 +29,6 @@ public class DestinoPeticionDTO {
         this.id = id;
     }
 	
-
     
     /**
     * @generated
@@ -37,7 +36,6 @@ public class DestinoPeticionDTO {
     private String nombre;
     
     
-
     /**
     * @return
     * @generated

@@ -20,11 +20,7 @@ public class ApplicationConfig extends Application {
     }
     
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(model.servicio.ConcejalServicio.class);
-resources.add(model.servicio.DestinoPeticionServicio.class);
-resources.add(model.servicio.EventoServicio.class);
-resources.add(model.servicio.PeticionServicio.class);
-resources.add(model.servicio.TipoPeticionServicio.class);
+        resources.add(PeticionServicio.class);resources.add(ConcejalServicio.class);resources.add(DestinoPeticionServicio.class);resources.add(TipoPeticionServicio.class);resources.add(EventoServicio.class);
     }
     
 }

@@ -2,7 +2,6 @@ package model.persistencia.entity;
 
 
 import javax.persistence.*;
-import model.persistencia.entity.DestinoPeticion;
 
 /**
   *  
@@ -32,13 +31,6 @@ public class Peticion {
 	public void setId(Long id){
 		this.id=id;
 	}
-    
-    /**
-    * @generated
-    * 1-1-false
-    */
-    
-  
     
     /**
     * @generated
@@ -79,8 +71,6 @@ public class Peticion {
     @ManyToOne(cascade={},fetch=FetchType.EAGER)
     private DestinoPeticion destinoPeticion;
     
-    
-  
     
     /**
     * @generated

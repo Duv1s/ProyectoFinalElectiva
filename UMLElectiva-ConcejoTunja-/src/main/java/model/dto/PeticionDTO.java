@@ -30,8 +30,6 @@ public class PeticionDTO {
     }
 	
     
-   
-    
     /**
     * @generated
     */
@@ -58,7 +56,6 @@ public class PeticionDTO {
     */
     private TipoPeticionDTO tipoPeticion;
     
-   
     /**
     * @return
     * @generated

@@ -81,7 +81,6 @@ public class TipoPeticionLogica {
 		if(dto==null)return null;
 		TipoPeticion entidad=new TipoPeticion();
 		entidad.setId(dto.getId());
-			entidad.setId(dto.getId());
 			entidad.setNombre(dto.getNombre());
 			entidad.setDescripcion(dto.getDescripcion());
 		
@@ -114,7 +113,6 @@ public class TipoPeticionLogica {
 	public TipoPeticionDTO convertirEntidad(TipoPeticion entidad){
 		TipoPeticionDTO dto=new TipoPeticionDTO();
 		dto.setId(entidad.getId());
-				dto.setId(entidad.getId());
 				dto.setNombre(entidad.getNombre());
 				dto.setDescripcion(entidad.getDescripcion());
 		

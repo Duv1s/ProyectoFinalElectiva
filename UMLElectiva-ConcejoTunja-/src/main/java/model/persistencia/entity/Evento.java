@@ -39,13 +39,6 @@ public class Evento {
     * @generated
     * 1-1-false
     */
-    
-  
-    
-    /**
-    * @generated
-    * 1-1-false
-    */
     @Temporal(TemporalType.DATE)
     //@Column(name = "fecha")
     private Date fecha;
@@ -75,8 +68,6 @@ public class Evento {
     private Double costo;
     
     
-    
-  
     
     /**
     * @generated

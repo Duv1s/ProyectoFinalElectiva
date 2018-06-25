@@ -81,7 +81,6 @@ public class DestinoPeticionLogica {
 		if(dto==null)return null;
 		DestinoPeticion entidad=new DestinoPeticion();
 		entidad.setId(dto.getId());
-			entidad.setId(dto.getId());
 			entidad.setNombre(dto.getNombre());
 		
 		
@@ -113,7 +112,6 @@ public class DestinoPeticionLogica {
 	public DestinoPeticionDTO convertirEntidad(DestinoPeticion entidad){
 		DestinoPeticionDTO dto=new DestinoPeticionDTO();
 		dto.setId(entidad.getId());
-				dto.setId(entidad.getId());
 				dto.setNombre(entidad.getNombre());
 		
 		

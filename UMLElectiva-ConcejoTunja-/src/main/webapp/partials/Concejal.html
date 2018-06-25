@@ -14,9 +14,6 @@
                 <th>
                     apellidos
                 </th>
-                <th>
-                    id
-                </th>
                 
 				<th>
 				    peticion
@@ -30,8 +27,6 @@
                 	<td>{{row.nombres}}</td>
                 
                 	<td>{{row.apellidos}}</td>
-                
-                	<td>{{row.id}}</td>
                 
                 
 					<td class="row">{{row.peticion.nombre}}</td>     
@@ -72,15 +67,6 @@
 	               ng-model="datosFormulario.apellidos"
 	    		   placeholder="apellidos"/>
 	        <div ng-show="errores.apellidos">{{errores.apellidos}}</div>
-	    </div>				
-	    <div class="form-group col-md-6" ng-class="errores.id?'error':''">
-	        <label for="id">id</label>
-	        <input id="id" 
-	               class="form-control" 
-	    		   type="text"
-	               ng-model="datosFormulario.id"
-	    		   placeholder="id"/>
-	        <div ng-show="errores.id">{{errores.id}}</div>
 	    </div> 
 		<div class="row">
 		    <div class="form-group col-md-6" ng-class="errores.peticion?'error':''">

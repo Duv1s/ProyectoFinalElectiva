@@ -31,8 +31,6 @@ public class TipoPeticionDTO {
 	
     
     /**
-  
-    /**
     * @generated
     */
     private String nombre;
@@ -43,7 +41,6 @@ public class TipoPeticionDTO {
     private String descripcion;
     
     
-   
     /**
     * @return
     * @generated

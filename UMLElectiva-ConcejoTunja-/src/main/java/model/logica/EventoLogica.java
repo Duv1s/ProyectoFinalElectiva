@@ -84,7 +84,6 @@ public class EventoLogica {
 		if(dto==null)return null;
 		Evento entidad=new Evento();
 		entidad.setId(dto.getId());
-			entidad.setId(dto.getId());
 			if(dto.getFecha()!=null){
 				try {
 					entidad.setFecha(fecha.parse(dto.getFecha()));
@@ -125,7 +124,6 @@ public class EventoLogica {
 	public EventoDTO convertirEntidad(Evento entidad){
 		EventoDTO dto=new EventoDTO();
 		dto.setId(entidad.getId());
-				dto.setId(entidad.getId());
 				if(entidad.getFecha()!=null){
 					dto.setFecha(fecha.format(entidad.getFecha()));
 				}
