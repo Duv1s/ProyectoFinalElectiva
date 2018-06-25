@@ -1,0 +1,102 @@
+
+				
+<div class="panel panel-primary" ng-hide="panelEditar">
+    <div class="panel-heading">Parametrizaci&oacute;n de Concejal</div>
+    <div class="panel-body">
+		<div class="btn-group">
+			<button type="button" class="btn btn-default" ng-click="nuevo()">Nuevo Concejal</button>
+		</div>
+        <table class="resultados table table-striped">
+            <tr>
+                <th>
+                    nombres
+                </th>
+                <th>
+                    apellidos
+                </th>
+                <th>
+                    id
+                </th>
+                
+				<th>
+				    peticion
+				</th>
+				
+				<th>
+                    <input class="form-control" ng-model="q"  placeholder="Buscar"/>
+                </th>
+            </tr>
+            <tr dir-paginate="row in lista|filter: q|itemsPerPage:10">
+                	<td>{{row.nombres}}</td>
+                
+                	<td>{{row.apellidos}}</td>
+                
+                	<td>{{row.id}}</td>
+                
+                
+					<td class="row">{{row.peticion.nombre}}</td>     
+				         
+				<td class="row">
+                    <button type="button" class="btn btn-default" ng-click="editar(row)">
+                        <span class="glyphicon glyphicon-pencil"></span>Editar
+                    </button>
+					<button type="button" class="btn btn-default" ng-click="eliminar(row)">
+                        <span class="glyphicon glyphicon-remove"></span>Eliminar
+                    </button>
+                </td>
+            </tr>
+        </table>
+		<div dir-pagination-controls></div>
+		<br/>
+    </div>
+</div>
+
+<div class="panel panel-primary" ng-show="panelEditar">
+    <div class="panel-heading">Parametrizaci&oacute;n de Concejal</div>
+    <div class="panel-body">
+	    				
+	    <div class="form-group col-md-6" ng-class="errores.nombres?'error':''">
+	        <label for="nombres">nombres</label>
+	        <input id="nombres" 
+	               class="form-control" 
+	    		   type="text"
+	               ng-model="datosFormulario.nombres"
+	    		   placeholder="nombres"/>
+	        <div ng-show="errores.nombres">{{errores.nombres}}</div>
+	    </div>				
+	    <div class="form-group col-md-6" ng-class="errores.apellidos?'error':''">
+	        <label for="apellidos">apellidos</label>
+	        <input id="apellidos" 
+	               class="form-control" 
+	    		   type="text"
+	               ng-model="datosFormulario.apellidos"
+	    		   placeholder="apellidos"/>
+	        <div ng-show="errores.apellidos">{{errores.apellidos}}</div>
+	    </div>				
+	    <div class="form-group col-md-6" ng-class="errores.id?'error':''">
+	        <label for="id">id</label>
+	        <input id="id" 
+	               class="form-control" 
+	    		   type="text"
+	               ng-model="datosFormulario.id"
+	    		   placeholder="id"/>
+	        <div ng-show="errores.id">{{errores.id}}</div>
+	    </div> 
+		<div class="row">
+		    <div class="form-group col-md-6" ng-class="errores.peticion?'error':''">
+		        <label>peticion</label>
+				<select id="peticion" class="form-control" 
+		            ng-model="datosFormulario.peticion"
+		            ng-options="option.nombre for option in listaPeticion track by option.id">
+		    	</select>
+		        <div ng-show="errores.peticion">{{errores.peticion}}</div>
+		    </div>
+		</div>
+		
+		<div class="btn-group">
+			<button type="button" class="btn btn-default" ng-click="guardar()">Aceptar</button>
+	        <button type="button" class="btn btn-default" ng-click="cancelar()">Cancelar</button>
+	    </div>    
+    </div>
+</div>
+
